@@ -1,0 +1,451 @@
+html {scroll-behavior: smooth;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
+
+/* Start Header */
+.header {height: 100vh;}
+
+.carousel {position: relative; top:0; left: 0;}
+
+.carousel .navbar {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .navbar .nav-link {margin-left: 0.7rem; font-size: 13px;}
+
+.header .navbar .nav-link i {padding-top: 3px;}
+
+.header .navbar .navbar-nav a {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+}
+
+.header .navbar .navbar-nav a:hover {color: #f25454;}
+
+.header .navbar .navbar-nav .active {color: #f25454;}
+
+.header .carousel-item {
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.header .carousel .carousel-item-1 {background-image: url(../images/slideshow-1.jpg);}
+
+.header .carousel .carousel-item-2 {background-image: url(../images/slideshow-2.jpg);}
+
+.header .carousel .carousel-item-3 {background-image: url(../images/slideshow-3.jpg);}
+
+.header .carousel .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-caption h2 {font-size: 70px; font-weight: 700;}
+
+.carousel-control-next,
+.carousel-control-prev {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff; 
+    border-left: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {background-color: #fff;}
+
+.carousel-control-next:hover .carousel-control-next-icon {color: #f25454; z-index: 10;}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {color: #f25454; z-index: 10;}
+
+.carousel-control-next {
+    left: 0; 
+    top: 350px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-control-prev {
+    left: 0; 
+    top: 300px; 
+    border-bottom: 0;
+    border-top-right-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {background: none; transition: all 0.5s;}
+
+.header .down-btn a {
+    width: 25px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    z-index: 99;
+}
+
+.header .down-btn a::after {
+    content: "";
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: header-btn-move;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header-btn-move
+{
+    0% {bottom: 80%; opacity: 0;}
+    100% {bottom: 20%; opacity: 1;}
+}
+/* End Header */
+
+
+/* Start Settings Box*/
+.settings-box {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 50;
+    padding: 12px;
+}
+/* Start Settings Box*/
+
+
+/* Start About */
+#about {margin-top: 7rem;}
+
+#about .main-head h2::before {content: "A";}
+
+#about .about-progress .progress,
+#about .about-progress .progress-bar {height: 4px;}
+
+#about .about-progress .progress {margin-bottom: 2em;}
+
+#about .about-progress h6 {font-size: 14px;}
+
+#about .about-progress .progress-head p {margin-bottom: 0;}
+/* End About */
+
+
+/* Start Our Team */
+#team .main-head h2::before {content: "O";}
+
+#team .team-card h6 {margin-bottom: 0;}
+
+#team .team-card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+#team .team-card {border-radius: 0.25rem;}
+
+#team .team-card-img img {transition: all 0.5s;}
+
+#team .team-card-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    background-color: rgba(242, 84, 84, 0.7);
+    transition: all 0.3s;
+}
+#team .team-card-overlay a {color: #fff; padding: 0 0.5rem;}
+
+#team .team-card:hover .team-card-overlay {display: block;}
+
+#team .team-card:hover .team-card-img img {transform: scale(1.2,1.2);}
+
+#team .team-card-info h6 {transition: all 0.3s;}
+
+#team .team-card:hover .team-card-info h6 {color: #f25454;}
+/* End Our Team */
+
+
+/* Start More Info */
+.more-info button {transition: all 0.3s;}
+
+.more-info button:hover {opacity: 0.8;}
+/* End More Info */
+
+
+/* Start Services */
+#services {
+    background-color: #FAFAFA;
+    line-height: 1.6;
+    padding: 5rem 0;}
+
+#services .main-head h2::before {content: "S"; z-index: 0 !important;}
+
+#services .services-term {margin-bottom: 1rem;}
+
+#services .services-info {margin-left: 10px;}
+
+#services .services-info h5 {transition: all 0.3s;}
+
+#services .services-term:hover .services-info h5 {color: #f25454;}
+
+#services .services-term .services-icon {
+    color: #f25454;
+    font-size: 22px;
+    padding-top: 5px;
+}
+/* End Services */
+
+
+/* Start Client Reviews */
+.reviews .main-head h2::before {content: "C";}
+
+.reviews #myCarousel2,
+.reviews #myCarousel {width: 60%; margin: auto;}
+
+.reviews #myCarousel2 .carousel-inner {padding: 30px;}
+
+.reviews #myCarousel2 .nav-link {
+    opacity: 0.5; 
+    transition: all 0.5s;
+    z-index: 1;
+    margin-left: 0.4rem;
+    padding: 0 !important;
+}
+
+.reviews #myCarousel2 .nav-link:focus {
+    transform: scale(1.2,1.2) ;
+    opacity:1;
+}
+
+.reviews #myCarousel h5 {margin-bottom: 02px!important;}
+
+.reviews #myCarousel p:last-child {font-size: 24px; margin-top: 20px;}
+/* Start Client Reviews */
+
+
+/* Start Contact */
+#contact {background-color: #FAFAFA; padding: 5rem 0;}
+
+#contact .main-head h2::before {content: "G"; z-index: 0 !important;}
+
+#contact .contact-info .contact-info-details {
+    border-bottom: 1px solid #eee;
+    margin: 1rem 0;
+}
+
+#contact .contact-info .contact-info-details h5 {margin-bottom: 0; transition: all 0.3s;}
+
+#contact .contact-info-details:hover .details-p h5 {color: #f25454;}
+
+#contact .contact-form .form-control {
+    border-radius: 0;
+    border: 2px solid #eee;
+}
+
+#contact .contact-form .form-control::placeholder {font-size: 15px; color: #a6a6a6;}
+
+#contact .contact-form  button {transition: all 0.3s;}
+
+#contact .contact-form  button:hover {opacity: 0.8;}
+/* End Contact */
+
+
+/* Start Main Footer */
+.main-footer {
+    position: relative;
+    background: #222222;
+    background-image: url(../images/dotted-map.png);
+    background-size: contain;
+}
+
+.main-footer .to-top-btn {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(242, 84, 84, 0.6);;
+}
+
+.main-footer .to-top-btn:hover {
+    background-color:rgba(242, 84, 84, 1);
+    cursor: pointer;
+}
+
+.main-footer .to-top-btn a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.main-footer .to-top-btn a:hover {color: #fff;}
+
+.main-footer h5 {margin-bottom: 20px;}
+
+.main-footer li,
+.main-footer a {
+    color: #b0b0b0;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.main-footer li {margin-bottom: 4px;}
+
+.main-footer a:hover {color: #f25454;}
+
+.main-footer .tags a {
+    text-decoration: none;
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+}
+.main-footer .tags a:hover {border: 1px solid #f25454}
+/* End Main Footer */
+
+
+/* Start Small Footer */
+.small-footer {background-color: #1A1A1A;}
+
+.small-footer .small-footer-icons a {margin-left: 20px;}
+
+.small-footer a {color: #fff; transition: all 0.3s;}
+
+.small-footer a:hover {color: #f25454;}
+/* End Small Footer */
+
+
+/* Start Global Classes */
+.main-color {color: #f25454;}
+
+.main-bg {background-color: #f25454;}
+
+.text-black-light {color: #666;}
+
+.text-gray {color: #999;}
+
+.font-poppins {font-family: 'Poppins', sans-serif;}
+
+.main-head {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.main-head h2 {
+    margin: 20px 0;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.main-head h2::after {
+    content: "";
+    background-color: #666;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    transition: all 0.5s;
+}
+
+.main-head h2::before {
+    content: "";
+    color: #999;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    opacity: 0.2;
+    z-index: -1;
+}
+.main-head:hover h2::after {width: 80px;}
+
+.main-head p {color: #999; font-size: 18px; padding-top: 20px;} 
+/* End Global Classes */
+
+
+/* Media Query */
+/* Small Screens: Max-width: 768px */
+@media (max-width: 768px)
+{
+    /* Global Classes */
+    .main-head {width: 100%;}
+
+    /* Header */
+    #header .carousel .carousel-caption h2 {
+    font-size: 36px;
+    font-weight: 700;}
+
+    .header .navbar .navbar-nav {background-color: #fff;}
+
+    .header .navbar .navbar-nav .nav-link {color: #1A1A1A !important;}
+
+    header .navbar .navbar-nav .active,
+    .header .navbar .navbar-nav .nav-link:hover {color: #f25454 !important;}
+
+    .header .navbar .navbar-nav .social {display: none;}
+
+    #header .down-btn {display: none;}
+
+    /* About */
+    #about .about-progress {margin-top: 2rem;}
+
+    /* Client Reviews */
+    .reviews #myCarousel2,
+    .reviews #myCarousel {width: 100%;}
+
+    /* Main Footer */
+    .main-footer .main-footer-term {margin-bottom: 1.5rem;}
+
+    /* Small Footer */
+    .small-footer .small-footer-icons {margin-bottom: 1rem;}
+
+    .small-footer .small-footer-icons a {margin-left: 10px;}
+
+    .small-footer .small-footer-icons,
+    .small-footer .small-footer-copyright {width: 100% !important; float: none; text-align: center;}
+}
+
+
+/* Medium Screens: from 769px to 991px */
+@media (min-width: 769px) and (max-width: 991px)
+{
+    /* Global Classes */
+    .main-head {width: 100%;}  
+    
+    /* About */
+    #about .about-progress {margin-top: 2rem;}
+
+    /* Small Footer */
+    .small-footer .small-footer-icons {width: 65% !important;}
+    .small-footer .small-footer-copyright {width: 35% !important;}
+
+     /* Client Reviews */
+    .reviews #myCarousel {width: 100%;}
+}
