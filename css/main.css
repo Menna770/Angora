@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
     top: 0; 
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
     padding: 30px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
     position: fixed;
     top: 150px;
     left: 0;
-    z-index: 50;
+    z-index: 80;
     padding: 12px;
 }
 /* Start Settings Box*/
@@ -394,27 +394,10 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
 /* Small Screens: Max-width: 768px */
 @media (max-width: 768px)
 {
-    /* Global Classes */
-    .main-head {width: 100%;}
-
     /* Header */
     #header .carousel .carousel-caption h2 {
     font-size: 36px;
     font-weight: 700;}
-
-    .header .navbar .navbar-nav {background-color: #fff;}
-
-    .header .navbar .navbar-nav .nav-link {color: #1A1A1A !important;}
-
-    header .navbar .navbar-nav .active,
-    .header .navbar .navbar-nav .nav-link:hover {color: #f25454 !important;}
-
-    .header .navbar .navbar-nav .social {display: none;}
-
-    #header .down-btn {display: none;}
-
-    /* About */
-    #about .about-progress {margin-top: 2rem;}
 
     /* Client Reviews */
     .reviews #myCarousel2,
@@ -436,11 +419,6 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
 /* Medium Screens: from 769px to 991px */
 @media (min-width: 769px) and (max-width: 991px)
 {
-    /* Global Classes */
-    .main-head {width: 100%;}  
-    
-    /* About */
-    #about .about-progress {margin-top: 2rem;}
 
     /* Small Footer */
     .small-footer .small-footer-icons {width: 65% !important;}
@@ -448,4 +426,26 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
 
      /* Client Reviews */
     .reviews #myCarousel {width: 100%;}
+}
+
+/* Common between Small & Medium screens */
+@media (max-width: 991px)
+{
+    /* Global Classes */
+    .main-head {width: 100%;}  
+
+    /* Header */
+    .header .navbar .navbar-nav {background-color: #fff;}
+
+    .header .navbar .navbar-nav .nav-link {color: #1A1A1A !important;}
+
+    header .navbar .navbar-nav .active,
+    .header .navbar .navbar-nav .nav-link:hover {color: #f25454 !important;}
+
+    .header .navbar .navbar-nav .social {display: none;}
+
+    #header .down-btn {display: none;}
+    
+    /* About */
+    #about .about-progress {margin-top: 2rem;}
 }
